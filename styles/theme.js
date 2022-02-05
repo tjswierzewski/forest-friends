@@ -7,6 +7,13 @@ const theme = createTheme({
         color: 'black',
       },
     },
+    MuiContainer: {
+      styleOverrides: {
+        maxWidthXl: {
+          maxWidth: '1200',
+        },
+      },
+    },
   },
   typography: {
     h2: { fontWeight: '600' },
