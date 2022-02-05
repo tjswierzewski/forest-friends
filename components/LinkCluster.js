@@ -1,4 +1,4 @@
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
 
 const LinkDuo = styled(Box)(({ theme }) => ({
