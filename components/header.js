@@ -1,5 +1,6 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link as LinkText } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 import LinkCluster from './LinkCluster';
 
 export default function Header({ children }) {
@@ -14,8 +15,31 @@ export default function Header({ children }) {
         }}
       >
         <LinkCluster>
-          <Typography variant="h3">Home</Typography>
-          <Typography variant="h3">About</Typography>
+          <Link href="/" passHref>
+            <LinkText
+              underline="hover"
+              variant="pageLink"
+              sx={{
+                '&:hover': {
+                  color: 'primary.main',
+                },
+              }}
+            >
+              Home
+            </LinkText>
+          </Link>
+
+          <LinkText
+            underline="hover"
+            variant="pageLink"
+            sx={{
+              '&:hover': {
+                color: 'primary.main',
+              },
+            }}
+          >
+            About
+          </LinkText>
         </LinkCluster>
         <Image
           src="/images/Forest_Friends_Logo.png"
@@ -24,8 +48,30 @@ export default function Header({ children }) {
           alt="Forest Friends Logo"
         />
         <LinkCluster>
-          <Typography variant="h3">My Animals</Typography>
-          <Typography variant="h3">Adopt</Typography>
+          <LinkText
+            underline="hover"
+            variant="pageLink"
+            sx={{
+              '&:hover': {
+                color: 'primary.main',
+              },
+            }}
+          >
+            My Animals
+          </LinkText>
+          <Link href="/adopt" passHref>
+            <LinkText
+              underline="hover"
+              variant="pageLink"
+              sx={{
+                '&:hover': {
+                  color: 'primary.main',
+                },
+              }}
+            >
+              Adopt
+            </LinkText>
+          </Link>
         </LinkCluster>
       </Box>
       {children}
