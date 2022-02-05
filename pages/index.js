@@ -5,8 +5,8 @@ export default function Home() {
   const nums = [...Array(50).keys()];
   const cards = nums.map((i) => {
     return (
-      <Grid item key={i} xs="1" justifyContent="center">
-        <NftCard src="/images/turtle.jpg" height={267.84} width={200} alt="turtle" />,
+      <Grid item key={i} xs="auto" justifyContent="center">
+        <NftCard src="/images/turtle.jpg" height={401.76} width={300} alt="turtle" />,
       </Grid>
     );
   });
@@ -18,7 +18,7 @@ export default function Home() {
         random NFT of the animal you saved. Take this companion with you in the Metaverse and visit
         other animal sanctuaries or make your own!
       </Typography>
-      <Grid container direction="row" columns={3} sx={{ margin: '5rem auto' }}>
+      <Grid container direction="row" columnSpacing={20} rowSpacing={10} sx={{ margin: '0 auto' }}>
         {cards}
       </Grid>
     </Container>

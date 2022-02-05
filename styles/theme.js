@@ -9,6 +9,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    h2: { fontWeight: '600' },
     h3: {
       fontSize: '1.7rem',
       font: 'Montserrat',
