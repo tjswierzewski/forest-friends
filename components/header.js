@@ -1,5 +1,4 @@
-import { Box, Typography } from '@material-ui/core';
-import { experimental_sx as sx } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import LinkCluster from './LinkCluster';
 

@@ -1,15 +1,15 @@
-import { Container, Grid, Typography } from '@material-ui/core';
+import { Container, Grid, Typography } from '@mui/material';
 import NftCard from '../components/NftCard';
 
 export default function Home() {
-  const cards = [];
-  for (let index = 0; index < 10; index++) {
-    cards.push(
-      <Grid item key={index}>
+  const nums = [...Array(50).keys()];
+  const cards = nums.map((i) => {
+    return (
+      <Grid item key={i} xs="1" justifyContent="center">
         <NftCard src="/images/turtle.jpg" height={267.84} width={200} alt="turtle" />,
-      </Grid>,
+      </Grid>
     );
-  }
+  });
   return (
     <Container maxWidth="xl">
       <Typography variant="h6">
@@ -20,7 +20,7 @@ export default function Home() {
         nisl erat in elit. Praesent condimentum ultrices sagittis. Ut tempor arcu commodo placerat
         semper.
       </Typography>
-      <Grid container direction="row" columns={3}>
+      <Grid container direction="row" columns={3} sx={{ margin: '5rem auto' }}>
         {cards}
       </Grid>
     </Container>
