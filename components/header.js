@@ -28,18 +28,19 @@ export default function Header({ children }) {
               Home
             </LinkText>
           </Link>
-
-          <LinkText
-            underline="none"
-            variant="pageLink"
-            sx={{
-              '&:hover': {
-                color: 'primary.main',
-              },
-            }}
-          >
-            About
-          </LinkText>
+          <Link href={'/about'} passHref>
+            <LinkText
+              underline="none"
+              variant="pageLink"
+              sx={{
+                '&:hover': {
+                  color: 'primary.main',
+                },
+              }}
+            >
+              About
+            </LinkText>
+          </Link>
         </LinkCluster>
         <Image
           src="/images/Forest_Friends_Logo.png"
