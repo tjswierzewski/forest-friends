@@ -1,11 +1,19 @@
 import { Box, Typography } from '@material-ui/core';
+import { experimental_sx as sx } from '@mui/material';
 import Image from 'next/image';
 import LinkCluster from './LinkCluster';
 
 export default function Header({ children }) {
   return (
     <div>
-      <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'flex-start',
+          gap: '4rem',
+        }}
+      >
         <LinkCluster>
           <Typography variant="h3">Home</Typography>
           <Typography variant="h3">About</Typography>
