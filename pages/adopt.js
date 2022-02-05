@@ -19,7 +19,7 @@ export default function Adopt() {
         you get the satisfaction of supporting conservation efforts around the world
       </Typography>
       <Button variant="contained" sx={{ fontSize: '3rem', margin: '1rem 0', fontWeight: '800' }}>
-        Mint your Forrest Friend
+        Mint your Forest Friend
       </Button>
     </Container>
   );

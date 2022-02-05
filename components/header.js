@@ -17,7 +17,7 @@ export default function Header({ children }) {
         <LinkCluster>
           <Link href="/" passHref>
             <LinkText
-              underline="hover"
+              underline="none"
               variant="pageLink"
               sx={{
                 '&:hover': {
@@ -30,7 +30,7 @@ export default function Header({ children }) {
           </Link>
 
           <LinkText
-            underline="hover"
+            underline="none"
             variant="pageLink"
             sx={{
               '&:hover': {
@@ -49,7 +49,7 @@ export default function Header({ children }) {
         />
         <LinkCluster>
           <LinkText
-            underline="hover"
+            underline="none"
             variant="pageLink"
             sx={{
               '&:hover': {
@@ -61,7 +61,7 @@ export default function Header({ children }) {
           </LinkText>
           <Link href="/adopt" passHref>
             <LinkText
-              underline="hover"
+              underline="none"
               variant="pageLink"
               sx={{
                 '&:hover': {
