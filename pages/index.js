@@ -13,12 +13,10 @@ export default function Home() {
   return (
     <Container maxWidth="xl">
       <Typography variant="h6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet imperdiet odio.
-        Quisque vulputate tempor nisi varius finibus. Sed eleifend vehicula tortor, elementum
-        porttitor sapien ullamcorper ut. Aliquam iaculis suscipit massa, at feugiat velit venenatis
-        vel. Suspendisse auctor, tellus non iaculis consequat, quam enim aliquet turpis, quis auctor
-        nisl erat in elit. Praesent condimentum ultrices sagittis. Ut tempor arcu commodo placerat
-        semper.
+        Forest Friends NFTs are curated from the best network of wildlife programs working to restore
+        endangered species across the world. Donate today to save an animal in the wild and receive a
+        random NFT of the animal you saved. Take this companion with you in the Metaverse and visit
+        other animal sanctuaries or make your own!
       </Typography>
       <Grid container direction="row" columns={3} sx={{ margin: '5rem auto' }}>
         {cards}
