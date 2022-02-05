@@ -1,32 +1,27 @@
 import { Box, Typography } from '@material-ui/core';
-import { alpha, styled } from '@mui/material/styles';
 import Image from 'next/image';
+import LinkCluster from './LinkCluster';
 
-const LinkDuo = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-}));
-
-export default function Header({ Children }) {
+export default function Header({ children }) {
   return (
     <div>
       <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-        <LinkDuo>
+        <LinkCluster>
           <Typography variant="h3">Home</Typography>
           <Typography variant="h3">About</Typography>
-        </LinkDuo>
+        </LinkCluster>
         <Image
           src="/images/Forest_Friends_Logo.png"
           height={350}
           width={350}
           alt="Forest Friends Logo"
         />
-        <LinkDuo>
+        <LinkCluster>
           <Typography variant="h3">My Animals</Typography>
           <Typography variant="h3">Adopt</Typography>
-        </LinkDuo>
+        </LinkCluster>
       </Box>
-      {Children}
+      {children}
     </div>
   );
 }
