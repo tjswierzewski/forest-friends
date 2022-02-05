@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Header from '../components/header';
 import createEmotionCache from '../lib/createEmotionCache';
 import theme from '../styles/theme';
+import '../styles/typographyGlobal.css';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
