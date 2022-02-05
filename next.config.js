@@ -1,6 +1,7 @@
 const withTM = require('next-transpile-modules')([
   '@mui/material',
   '@mui/system',
+  '@mui/styled-engine',
   '@mui/icons-material', // If @mui/icons-material is being used
 ]);
 
