@@ -6,6 +6,7 @@ const withTM = require('next-transpile-modules')([
 ]);
 
 module.exports = withTM({
+  images: { domains: ['forest-friends.s3.amazonaws.com'] },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

@@ -2,11 +2,17 @@ import { Container, Grid, Typography } from '@mui/material';
 import NftCard from '../components/NftCard';
 
 export default function Home() {
-  const nums = [...Array(50).keys()];
+  const nums = [...Array(10).keys()];
   const cards = nums.map((i) => {
     return (
       <Grid item key={i} xs="auto" justifyContent="center">
-        <NftCard src="/images/turtle.jpg" height={401.76} width={300} alt="turtle" />,
+        <NftCard
+          src={`https://forest-friends.s3.amazonaws.com/turtles/${i + 1}.png`}
+          height={401.76}
+          width={300}
+          alt="turtle"
+        />
+        ,
       </Grid>
     );
   });
